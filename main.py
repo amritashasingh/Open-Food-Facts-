@@ -71,3 +71,5 @@ ingredientscsv.close()
 #amount of times that reduced iron shows up
 #amount of times that electrolytic iron show up
 
+#amount of times ferrous sulfate(iron) shows up
+
