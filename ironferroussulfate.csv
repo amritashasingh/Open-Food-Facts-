@@ -1,5 +1,6 @@
 id,ironferroussulfate
 0072655454422,"Cooked pasta (water, enriched wheat flour [durum wheat semolina, niacin, ferrous sulfate {iron}, thiamine mononitrate, riboflavin, folic acid], soybean oil, egg white)"
+0049100333830, IRON (FERROUS SULFATE)
 0072655001053,"Cooked pasta (water, enriched wheat flour [durum wheat semolina, niacin, ferrous sulfate {iron}, thiamine mononitrate, riboflavin, folic acid], soybean oil, egg white)"
 0072655001039,"Cooked pasta (water, enriched wheat flour [durum wheat semolina, niacin, ferrous sulfate {iron}, thiamine mononitrate, riboflavin, folic acid], soybean oil, egg white)"
 0071314105064, reduced iron
@@ -13,6 +14,7 @@ id,ironferroussulfate
 0072250013383, iron (ferrous sulfate)
 0041318030716," enriched pasta (wheat flour, egg white, whole egg, niacin, ferrous sulfate [iron], thiamin mononitrate, riboflavin, folic acid)"
 0041318031140," enriched egg noodles (wheat flour, eggs, egg whites, niacin, ferrous sulfate [iron], thiamine mononitrate, riboflavin, folic acid)"
+0051000212320," enriched egg noodles (wheat flour, eggs, egg whites, niacin, ferrous sulfate, thiamine mononitrate, riboflavin, folic acid)"
 0015400872829, reduced iron
 0041497331192," enriched pasta (durum wheat flour, water, egg white, whole egg, niacin, ferrous sulfate [iron], thiamin mononitrate, riboflavin, folic acid)"
 04656701494, reduced iron
@@ -21,8 +23,10 @@ id,ironferroussulfate
 0607880032574," enriched egg noodles (wheat flour, eggs, egg whites, niacin, ferrous sulfate [iron], thiamine mononitrate, riboflavin, folic acid)"
 0079893107165," cooked chicken (chicken breast with rib meat, water, soybean oil, sodium phosphate [sodium phosphate, carrageenan], modified corn starch, salt, tomato paste, spices, onion powder, enriched bleached wheat flour [niacin, reduced iron, thiamine mononitrate, riboflavin, folic acid], nonfat dry milk)"
 0021140019790," enriched egg noodles (wheat flour, eggs, egg whites, niacin, ferrous sulfate [iron], thiamin mononitrate, riboflavin, folic acid)"
+0021605052300," extra fancy durum flour (enriched with niacin, ferrous sulfate, thiamine mononitrate, riboflavin, folic acid)"
 0015400172820, reduced iron
 0606541920380, iron
+0072655460119," Chicken Enchilada (Water, Corn Masa [with Trace of Lime, Cellulose Gum, Mono - and Diglycerides], Cooked Chicken [Chicken, Water, Modified Corn Starch, Salt, Sodium Phosphate], Tomatoes in Juice, Green Bell Peppers, Onions, Long Grain Enriched Rice [Parboiled Rice Enriched with Niacin, Iron, Thiamine, Folic Acid], Contains Less than 2% of: Tomato Paste, Modified Corn Starch, Flavorings, Chipotle Peppers, Wheat Flour, Sodium Carboxymethylcellulose, Sugar, Salt)"
 0072655460072,"Cooked pasta (water, enriched wheat flour [durum wheat flour, niacin, ferrous sulfate {iron}, thiamine mononitrate, riboflavin, folic acid], egg white)"
 0072655458611," cooked pasta (water, enriched wheat flour [durum wheat flour, niacin, ferrous sulfate {iron}, thiamine mononitrate, riboflavin, folic acid], soybean oil, egg whites)"
 0072655458475,"Cooked noodles (water, enriched wheat flour [durum wheat flour, niacin, ferrous sulfate {iron}, thiamine mononitrate, riboflavin, folic acid], whole eggs, soybean oil)"
@@ -31,9 +35,18 @@ id,ironferroussulfate
 0072655454439,"Cooked noodles (water, enriched wheat flour [durum wheat semolina, niacin, ferrous sulfate {iron} thiamine mononitrate, riboflavin, folic acid], whole eggs, soybean oil)"
 0072655001077,"Cooked pasta (water, enriched wheat flour [durum wheat semolina, niacin, ferrous sulfate {iron}, thiamine mononitrate, riboflavin, folic acid], soybean oil, egg white)"
 0072655454446,"Cooked pasta (water, enriched wheat flour [durum wheat semolina, niacin, ferrous sulfate {iron}, thiamine mononitrate, riboflavin, folic acid], soybean oil, egg white)"
+0050100402600," Enriched Egg Noodles (Durum Wheat Semolina, Whole Egg, Egg White, Niacin, Iron [Ferrous Sulfate], Thiamine Mononitrate, Riboflavin, Folic Acid)"
+0050100171896," Cooked Corn Noodles (Water, Enriched Wheat Flour [Wheat Flour, Malted Barley Flour, Niacin, Ferrous Sulfate, Thiamine Mononitrate, Riboflavin, Folic Acid], Eggs, Ground Yellow Corn Flour, Corn Meal, Monoglycerides)"
+0050100402587," Cooked Noodles (Enriched Egg Noodles [Durum Wheat Semolina, Whole Egg, Egg White, Niacin, Iron {Ferrous Sulfate}, Thiamine Mononitrate, Riboflavin, Folic Acid], Water)"
 0050100210298,"Breaded herb crusted fish (pollock, enriched wheat flour [bleached and unbleached wheat flour, niacin, ferrous sulfate {iron}, thiamine mononitrate, riboflavin, folic acid], water, contains 2% or less of: soybean oil, modified corn starch, spices, sugar, salt, yellow corn flour, white corn flour, garlic powder, egg whites, onion powder, yeast, leavening [sodium acid pyrophosphate, sodium bicarbonate], dextrose, soy flour, natural flavor, yeast extract, caramel color, torula yeast, dehydrated garlic, extractives of paprika [color], olive oil, canola oil)"
+0050100459871," Breaded Lemon Pepper Fish (Pollock, Enriched Wheat Flour [Bleached And Unbleached Wheat Flour, Niacin, Reduced Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Water, Canola Oil, Sugar, Salt, Yellow Corn Flour, Dried Garlic, Modified Corn Starch, Dried Onion, Whey, Spices, Citric Acid, Yeast Extract, Yeast, Natural Flavors, Maltodextrin, Lemon Peel, Soy Flour, Soybean Oil, Gum Arabic, Guar Gum, Annatto [Color], Sodium Caseinate, Sodium Bicarbonate, Dextrose, Buttermilk, Cream, Turmeric Extract [Color], Caramel Color, Extractives Of Paprika)"
+0050100459543," Cooked Pasta (Water, Enriched Wheat Flour [Durum Wheat Semolina, Niacin, Ferrous Sulfate {Iron}, Thiamine Mononitrate, Riboflavin, Folic Acid], Soybean Oil)"
 0050100459536, ferrous sulfate (iron)
 0072655230217, ferrous sulfate (iron)
+0050100171735," Enriched Egg Noodles (Durum Wheat Semolina, Egg White, Whole Egg, Niacin, Iron [Ferrous Sulfate], Thiamine Mononitrate, Riboflavin, Folic Acid)"
+0050100402778," Enriched Macaroni (Durum Wheat Semolina, Niacin, Ferrous Sulfate, Thiamine Mononitrate, Riboflavin, Folic Acid)"
+0072655232174,"COOKED ENRICHED PASTA (WATER, SEMOLINA FLOUR, EGG WHITE, FERROUS SULFATE [IRON], NIACIN, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID)"
+0050100453152," Cooked Corn Noodles (Water, Enriched Wheat Flour [Wheat Flour, Malted Barley Flour, Niacin, Ferrous Sulfate, Thiamine Mononitrate, Riboflavin, Folic Acid], Eggs, Corn Meal, Yellow Corn Meal Flour)"
 0073410135471, reduced iron
 0073410134139, reduced iron
 0073711122019,"Enriched wheat flour (wheat flour, barley malt, niacin, iron, thiamin mononitrate, riboflavin, folic acid)"

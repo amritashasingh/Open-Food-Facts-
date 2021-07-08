@@ -16,15 +16,10 @@ with open('ingredients.csv', 'w', encoding='UTF8') as ingredientscsv:
         for row in reader:
 
             id = row['code']
-            #print(id)
-
             ingredients = row['ingredients_text']
-            #print(ingredients)
-
+           
             #use regular expressions to replace comma with ; when it exists within the ()
-            new_ingredient = re.sub(r'\([^()]+\)',
-                                    lambda x: x.group().replace(',', ';'),
-                                    ingredients)
+            new_ingredient = re.sub(r'\([^()]+\)',lambda x: x.group().replace(',', ';'),ingredients)
 
             ingredientssplit = new_ingredient.split(',')
 
@@ -56,20 +51,113 @@ with open('ironferroussulfate.csv', 'w', encoding='UTF8') as ironferroussulfatec
             id = row['id']
             ironferroussulfate = row['ingredients']
 
-            # if the ingredient in the ingredients.csv file contains peanut butter
-            if "iron" in row['ingredients']:
+            # if the ingredient in the ingredients.csv file contains the term iron or ferrous sulfate (different capitalizations)
+            if row['ingredients'].find("IRON") != -1 or row['ingredients'].find("Iron") != -1 or row['ingredients'].find("iron") != -1 or row['ingredients'].find("Ferrous Sulfate") !=-1 or row['ingredients'].find("FERROUS SULFATE") != -1 or row['ingredients'].find("ferrous sulfate") != -1:
                 data2 = [id, ironferroussulfate]
                 writerforfile.writerow(data2)
-                print()
 
 ingredientscsv.close()
+ironferroussulfatecsv.close()
 
-# looking for different formatting differences and the number of times a term shows up
 
-#amount of times iron as a term shows up
-#amount of times ferrous sulfate as a term shows up
-#amount of times that reduced iron shows up
-#amount of times that electrolytic iron show up
+#declaring count variables
+countofIron=0
+countofIRON=0
+countofiron=0
+countofreducediron=0
+countofReducedIron=0
+countofironferroussulfate=0
+countofironferroussulfate2=0
+countofIRONFERROUSSULFATE=0
+countofelectrolyticiron=0
+countofferroussulfate=0
+countofFERROUSSULFATE=0
+countofferroussulfateiron=0
+countofferroussulfateiron2=0
+countofferroussulfateiron3=0
+countofferroussulfateiron4=0
 
-#amount of times ferrous sulfate(iron) shows up
+with open ('ironferroussulfate.csv', 'r', newline ='') as ironferroussulfatecsv:
+  reader3 = csv.DictReader(ironferroussulfatecsv)
+
+  for row in reader3:
+    
+     if "Iron" in  row['ironferroussulfate']:
+       countofIron+=1
+    
+     if "IRON" in row['ironferroussulfate']:
+       countofIRON+=1
+
+     if "iron" in row['ironferroussulfate']:
+       countofiron+=1
+
+     if "reduced iron" in row['ironferroussulfate']:
+       countofreducediron+=1
+
+     if "Reduced Iron" in row['ironferroussulfate']:
+        countofReducedIron+=1
+
+     if "electrolytic iron" in row['ironferroussulfate']:
+       countofelectrolyticiron+=1
+
+     if "iron (ferrous sulfate)" in row['ironferroussulfate']:
+       countofironferroussulfate+=1
+
+     if "IRON (FERROUS SULFATE" in row['ironferroussulfate']:
+       countofIRONFERROUSSULFATE+=1
+      
+     if "Iron [Ferrous Sulfate]" in row['ironferroussulfate']:
+       countofironferroussulfate2+=1
+      
+     if "ferrous sulfate" in row['ironferroussulfate']:
+       countofferroussulfate+=1
+
+     if "FERROUS SULFATE" in row['ironferroussulfate']:
+      countofFERROUSSULFATE+=1
+ 
+     if "ferrous sulfate {iron}" in row['ironferroussulfate']:
+      countofferroussulfateiron+=1
+
+     if "ferrous sulfate (iron)" in row['ironferroussulfate']:
+       countofferroussulfateiron2+=1
+
+     if "ferrous sulfate [iron]" in row['ironferroussulfate']:
+       countofferroussulfateiron3+=1
+
+     if "FERROUS SULFATE [IRON]" in row['ironferroussulfate']:
+       countofferroussulfateiron4+=1
+
+      
+#printing out the counts    
+
+#subtrating countofironferroussulfate2 and countofReducedIron because althought the term "Iron" is in it, the instances of Iron are when the ingredient is just "Iron"             
+print("The count of Iron is: " +  str(countofIron-countofironferroussulfate2-countofReducedIron))
+
+print("The count of IRON is: " + str(countofIRON-countofIRONFERROUSSULFATE-countofferroussulfateiron4))
+
+print("The count of iron is: " + str(countofiron-countofreducediron-countofironferroussulfate-countofelectrolyticiron- countofferroussulfateiron))
+
+print("The count of reduced iron is: "+ str(countofreducediron))
+
+print("The count of Reduced Iron is: " + str(countofReducedIron))
+
+print("The count of electrolytic iron is: " + str(countofelectrolyticiron))
+
+print("The count of iron (ferrous sulfate) is: " + str(countofironferroussulfate))
+
+print("The count of IRON (FERROUS SULFATE) is: " + str(countofIRONFERROUSSULFATE))
+
+print("The count of Iron [Ferrous Sulfate] is: " + str(countofironferroussulfate2))
+
+print("The count of ferrous sulfate is: " + str(countofferroussulfate-countofironferroussulfate-countofferroussulfateiron-countofferroussulfateiron2-countofferroussulfateiron3))
+
+print("The count of FERROUS SULFATE is: " + str(countofFERROUSSULFATE-countofIRONFERROUSSULFATE-countofferroussulfateiron4))
+
+print("The count of ferrous sulfate {iron} is: " + str(countofferroussulfateiron))
+
+print("The count of ferrous sulfate(iron) is: " + str(countofferroussulfateiron2))
+
+print("The count of ferrous sulfate [iron] is: " + str(countofferroussulfateiron3))
+
+print("The count of FERROUS SULFATE [IRON] is: " + str(countofferroussulfateiron4))
 
