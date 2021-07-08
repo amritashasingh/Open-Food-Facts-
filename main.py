@@ -51,7 +51,8 @@ with open('ironferroussulfate.csv', 'w', encoding='UTF8') as ironferroussulfatec
             id = row['id']
             ironferroussulfate = row['ingredients']
 
-            # if the ingredient in the ingredients.csv file contains the term iron or ferrous sulfate (different capitalizations)
+            # if the ingredient in the ingredients.csv file contains the term iron or..
+            #ferrous sulfate (different capitalizations)
             if row['ingredients'].find("IRON") != -1 or row['ingredients'].find("Iron") != -1 or row['ingredients'].find("iron") != -1 or row['ingredients'].find("Ferrous Sulfate") !=-1 or row['ingredients'].find("FERROUS SULFATE") != -1 or row['ingredients'].find("ferrous sulfate") != -1:
                 data2 = [id, ironferroussulfate]
                 writerforfile.writerow(data2)
@@ -130,13 +131,16 @@ with open ('ironferroussulfate.csv', 'r', newline ='') as ironferroussulfatecsv:
       
 #printing out the counts    
 
-#subtrating countofironferroussulfate2 and countofReducedIron because althought the term "Iron" is in it, the instances of Iron are when the ingredient is listed as "Iron"             
+#subtrating countofironferroussulfate2 and countofReducedIron because...
+#although the term "Iron" is in it, the instances of Iron are when the ingredient is listed as "Iron"           
 print("The count of Iron is: " +  str(countofIron-countofironferroussulfate2-countofReducedIron))
 
-#subtracting countofIRONFERROUSSULFATE and countofferroussulfateiron4 because although the term "IRON" is in it, the instances of IRON are when the ingredient is listed as "IRON"
+#subtracting countofIRONFERROUSSULFATE and countofferroussulfateiron4 because...
+#although the term "IRON" is in it, the instances of IRON are when the ingredient is listed as "IRON"
 print("The count of IRON is: " + str(countofIRON-countofIRONFERROUSSULFATE-countofferroussulfateiron4))
 
-#subtracting countofreducediron,countofironferroussulfate,countofelectrolyticiron, and countofferroussulfateiron because althought the term "Iron" is in it, the instances of "iron" are when the ingredient is listed as "iron" 
+#subtracting countofreducediron,countofironferroussulfate,countofelectrolyticiron, and countofferroussulfateiron because...
+#although the term "Iron" is in it..the instances of "iron" are when the ingredient is listed as "iron" 
 print("The count of iron is: " + str(countofiron-countofreducediron-countofironferroussulfate-countofelectrolyticiron- countofferroussulfateiron))
 
 
@@ -152,10 +156,12 @@ print("The count of IRON (FERROUS SULFATE) is: " + str(countofIRONFERROUSSULFATE
 
 print("The count of Iron [Ferrous Sulfate] is: " + str(countofironferroussulfate2))
 
-#subracting countofironferroussulfate, countofferroussulfateiron, countofferroussulfateiron2, and countofferroussulfateiron3 because although the term "ferrous sulfate" is in it, instances of iron are when the ingredient is listed as "ferrous sulfate"
+#subracting countofironferroussulfate, countofferroussulfateiron, countofferroussulfateiron2, and countofferroussulfateiron3 because..
+#although the term "ferrous sulfate" is in it, instances of iron are when the ingredient is listed as "ferrous sulfate"
 print("The count of ferrous sulfate is: " + str(countofferroussulfate-countofironferroussulfate-countofferroussulfateiron-countofferroussulfateiron2-countofferroussulfateiron3))
 
-#subtracting countofIRONFERROUSSULFATE and countofferroussulfateiron4 because althought the term "FERROUS SULFATE" is in it, instances of FERROUS SULFATE are when the ingredient is listed as "FERROUS SULFATE" 
+#subtracting countofIRONFERROUSSULFATE and countofferroussulfateiron4 because... 
+#although the term "FERROUS SULFATE" is in it, instances of FERROUS SULFATE are when the ingredient is listed as "FERROUS SULFATE" 
 print("The count of FERROUS SULFATE is: " + str(countofFERROUSSULFATE-countofIRONFERROUSSULFATE-countofferroussulfateiron4))
 
 print("The count of ferrous sulfate {iron} is: " + str(countofferroussulfateiron))
